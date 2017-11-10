@@ -1,0 +1,174 @@
+.social_media{
+
+    background-color: #f8f8f8;
+    padding-top: 75px;
+}
+
+//column one
+
+.social_media_first{
+    .social_media_title{
+        font-family: "Montserrat";
+        font-size: 46px;
+        font-weight: bold;
+        color: #cccccc;
+        &:hover, &:visited,
+        &:focus{
+            text-decoration: none;
+            color: #cccccc;
+        }
+    }
+    .social_media_text{
+        @extend .sub;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .social_media_followers{
+        font-family: "Montserrat";
+        font-size: 16px;
+    }
+    .social_media_links{
+        padding-bottom: 40px;
+    }
+    h5{
+        color: #999999;
+        display: inline;
+    }
+    a{
+        padding: 5px;
+    }
+    form{
+        display: flex;
+        input{
+            height: 40px;
+            width: 58%;
+            @extend .sub_two;
+            border: solid 1px;
+        }
+        button{
+            height: 40px;
+            width: 38%;
+            background-color: #95e1d3;
+            color: white;
+            border: none;
+            @extend h4;
+            font-weight: bold;
+        }
+    }
+}
+
+// column two
+
+.social_media_blogs{
+
+    div{
+        padding-bottom: 38px;
+    }
+    p{
+        @extend h6;
+    }
+}
+
+.social_media_photo{
+    float: left;
+    padding-right: 20px;
+}
+
+.social_media_date{
+    @extend .sub_three;
+    font-size: 13px;
+
+}
+
+// column three
+
+
+.social_media_instagram{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    li {
+        width: 33.3%;
+        height: auto;
+        padding: 2px;
+    }
+}
+
+.social_media_instagram_more{
+    @extend .sub_three;
+    font-size: 13px;
+    &:hover, &:active, &:visited{
+        text-decoration: none;
+        color: #999999;
+    }
+}
+
+
+.social_media_instagram li:hover {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+@media (max-width: 767px){
+    .social_media_blogs_title{
+        padding-top: 50px;
+    }
+    .social_media_instagram{
+        padding: 0;
+    }
+
+    .social_media_blogs{
+        padding: auto;
+    }
+
+    .social_media_section_instagram{
+        padding: auto;
+    }
+}
+
+@media (min-width: 768px){
+    .social_media_blogs_title{
+        padding-bottom: 50px;
+    }
+    .social_media_instagram{padding: 50px 0 0 0;
+    }
+
+    .social_media_blogs{
+        padding-left: 0!important;
+    }
+
+    .social_media_section_instagram{
+        padding: 0!important;
+    }
+}
+
+@media (max-width: 992px){
+    .social_media_blogs{
+        div{
+            padding-bottom: 27px;
+        }
+    }
+    .social_media_instagram{
+        flex-wrap: nowrap;
+    }
+}

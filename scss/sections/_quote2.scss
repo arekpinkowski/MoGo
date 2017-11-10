@@ -1,0 +1,21 @@
+@media (max-width: 768px){
+    .quote2{
+        display: none;
+    }
+}
+.quote2{
+    .second_carousele_text{
+        @extend .carousele_text;
+        margin-top: 24px;
+    }
+
+
+    .second_carousel_control{
+        @include indicator_carousele;
+        padding-top: 90px;
+    }
+
+    .carousele_photo{
+        padding-top: 40px;
+    }
+}

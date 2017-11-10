@@ -1,0 +1,27 @@
+@import "components/mixin_top_button";
+
+//top button
+
+.return_to_top{
+    @include top_button;
+}
+
+.return_to_top i{
+    @include top_button_i;
+}
+
+.return_to_top:hover {
+    background: #05bb99;
+}
+.return_to_top:hover i {
+    color: white;
+    top: 3px;
+}
+
+@media (max-width: 768px){
+    .return_to_top{
+        display: none!important;
+    }
+
+
+}

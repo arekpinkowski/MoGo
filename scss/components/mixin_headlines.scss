@@ -1,0 +1,55 @@
+// Global mixins
+
+@mixin h2{
+    @media (max-width: 767px){
+        padding-top: 50px;
+        font-family: "Kaushan Script" !important;
+        text-align: center;
+        font-size: 1.7rem;
+        margin: 0 !important;
+    }
+    @media (min-width: 768px){
+        padding-top: 100px;
+        font-family: "Kaushan Script" !important;
+        text-align: center;
+        font-size: 1.7rem;
+        margin: 0 !important;
+    }
+}
+
+@mixin h3{
+    font-family: "Montserrat" !important;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold !important;
+    font-size: 2.15rem;
+}
+
+@mixin h4 {
+    font-family: "Montserrat" !important;
+    text-transform: uppercase;
+    font-size: 14px !important;
+}
+
+@mixin h5 {
+    font-family: "Roboto" !important;
+    font-style: italic;
+    font-size: 15px !important
+
+}
+
+@mixin h6 {
+    font-family: "Montserrat" !important;
+    text-transform: uppercase;
+    font-size: 12px !important;
+}
+
+
+@mixin underline {
+    margin-bottom: 45px;
+    width: 5%;
+    border: none;
+    height: 3px;
+    background-color: #f38181
+
+}

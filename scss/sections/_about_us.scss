@@ -1,0 +1,32 @@
+.about{
+    .row{
+        margin-bottom: 100px;
+    }
+}
+
+
+.grad {
+    @include gradient;
+}
+
+.img_wrap {
+    position: relative;
+    transition: .3s;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.img_wrap:hover {
+    box-shadow: 10px 10px 0 0 #95e1d3;
+    transition: .3s;
+    transform: translate(-10px, -10px);;
+}
+
+.img_wrap:hover .grad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: bold;
+}

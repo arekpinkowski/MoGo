@@ -1,0 +1,17 @@
+.footer{
+    background-color: #f8f8f8;
+    .footer_info{
+        text-align: center;
+        h4{
+            font-size: 14px;
+            a{
+                &:hover, &:active, &:visited{
+                    text-decoration: none;
+                }
+            }
+            .footer_author{
+                color: #f38181;
+            }
+        }
+    }
+}

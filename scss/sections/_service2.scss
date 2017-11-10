@@ -1,0 +1,83 @@
+@media (max-width: 768px){
+    .panel_main{
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 1199px){
+    .panel-body{
+        max-height: 122px !important;
+    }
+    .panel_main{
+        padding-left: 0;
+    }
+}
+
+
+@media (min-width: 1200px){
+    .panel-body{
+        max-height: 179px;
+    }
+    .panel-collapse{
+            padding: 5px;
+    }
+}
+
+.panel a{
+    text-decoration: none !important;
+}
+
+.panel-heading{
+    height: 60px;
+    display: inline;
+    color: #999999;
+    .panel_logo{
+        float: left;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+}
+
+.panel-collapse{
+    padding-right: 1.5vw;
+    color: #999999;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: lighter;
+    border-top: solid 1px #e5e5e5;
+    .panel-body{
+        overflow: auto;
+        padding: 10px !important;
+    }
+}
+
+.panel-default a:after {
+    float: right;
+    font-family: "FontAwesome";
+    content: "\f106";
+	color: #999999;
+    margin-top: -20px;
+    padding-right: 15px;
+	font-size: 40px;
+    line-height: 24px !important;
+}
+
+a.collapsed:after {
+	content: "\f107";
+}
+
+.panel-body::-webkit-scrollbar {
+	width: 5px;
+}
+
+.panel-body::-webkit-scrollbar-track {
+	background-color: #f5f5f5;
+	border-radius: 10px;
+}
+
+.panel-body::-webkit-scrollbar-thumb {
+	background-color: #95e1d3;
+	border: 1px solid #95e1d3;
+	border-radius: 10px;
+}

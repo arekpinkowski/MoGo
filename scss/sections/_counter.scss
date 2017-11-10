@@ -1,0 +1,44 @@
+@media (max-width: 767px){
+    .counter .col-md-2{
+        border-top: solid 1px white;
+    }
+}
+
+@media (min-width: 768px) {
+    .counter{
+        margin-top: 80px;
+    }
+}
+
+.counter {
+    background-color: #95e1d3;
+    .col-md-2{
+        max-height: 270px;
+        height: 25vh;
+        color: white;
+        border-left: solid 1px white;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+        .count{
+            font-family: "Montserrat";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            .counter_value{
+                font-size: 60px;
+                font-weight: bold;
+            }
+            .counter_text{
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .last{
+        border-right: solid 1px white;
+    }
+}

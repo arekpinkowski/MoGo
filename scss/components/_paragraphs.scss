@@ -1,0 +1,38 @@
+// Headlines
+@import "components/mixin_paragraph";
+
+.main{
+    @include p_main;
+}
+
+.sub{
+    @include p_sub;
+}
+
+.sub_two{
+    @include p_sub_two;
+}
+
+.sub_three{
+    @include p_sub_three;
+}
+
+@media (max-width: 768px){
+
+
+}
+
+@media (max-width: 992px){
+
+
+}
+
+@media (max-width: 1199px){
+
+
+
+}
+
+@media (min-width: 1200px){
+
+}

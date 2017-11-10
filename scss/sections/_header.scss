@@ -1,0 +1,183 @@
+@media (max-width: 768px){
+    .menu{
+        text-align: center;
+        float: none !important;
+        ul li a:hover{
+                margin: 0 38% 0 38%
+        }
+        ul li a:active, .menu ul li a:focus{
+                margin: 0 38% 0 38%
+        }
+        .search{
+            display: none;
+        }
+    }
+
+    .slider li{
+        padding-top: 40px !important;
+    }
+}
+
+@media (min-width: 768px){
+    .menu{
+        float: right;
+        display: block;
+    }
+    .navbar{
+        padding-top: 30px;
+    }
+}
+
+header {
+    background-image: url("../images/Layer1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    .underline{
+        background-color: white;
+    }
+}
+
+
+
+.navbar{
+    border: 0!important;
+    .container-fluid{
+        padding: 0px;
+    }
+    .navbar-toggle{
+        margin: 0!important;
+        padding: 0 15px!important;
+    }
+    .navbar-brand{
+        font-size: 30px !important;
+        color: white;
+        font-family: "Montserrat";
+        font-weight: bold;
+    }
+    .navbar-brand:visited, .navbar-brand:hover{
+        color: white;
+    }
+}
+
+.menu ul li{
+    padding-left: 15px;
+    padding-right: 15px;
+    a{
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        font-size: 14px;
+        color: white;
+        padding-bottom: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        &:hover{
+            color: #fce38a;
+            border-bottom: solid 2px #fce38a;
+            background-color: transparent   !important;
+        }
+        &:active, &:focus{
+            color: #fce38a;
+            border-bottom: solid 2px #fce38a;
+            background-color: transparent !important;
+        }
+    }
+}
+
+
+.shopping{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.search {
+    margin-top: 3px;
+    float: right;
+    outline: none;
+    background: transparent url("../images/MAGNIFYING.png") no-repeat 10px center;
+    border: solid 1px transparent;
+    padding: 20px 20px;
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    &:focus{
+        width: 110px;
+	    padding-left: 35px;
+	    color: #fff;
+	    cursor: auto;
+	    background-color: #db6667;
+    }
+    &:hover{
+        background-color: #db6667;
+    }
+}
+
+
+
+    .button_header {
+        height: 35px;
+        width: 150px;
+        border: solid 2px white;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 5px;
+        font-family: "Montserrat";
+        font-weight: bold;
+        &:hover{
+            background-color: #f38181;
+            transition: 0.3s;
+        }
+        &:hover, &:active, &:visited, &:focus {
+            text-decoration:none !important;
+            color: white !important;
+        }
+    }
+
+
+// slider
+
+    .progress_bar{
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        margin-bottom: 25px;
+    }
+
+    .slider{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        padding-left: 0;
+        li{
+            padding-top: 150px;
+            width: 20%;
+            list-style-type: none;
+        }
+        a{
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover, &:focus, &:active{
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+        span{
+            font-weight: bold;
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }

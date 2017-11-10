@@ -1,0 +1,22 @@
+@media (max-width: 767px){
+    .logos{
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 768px){
+    .logos{
+        margin-top: 120px;
+    }
+}
+
+.logos{
+    min-height: 250px;
+    background-color: #f8f8f8;
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:40px 0 40px 0;
+    }
+}
