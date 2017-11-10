@@ -72,6 +72,7 @@ $(document).ready(function(){
         }, 1200);
     })
 
+
 // counter
 
         var a = 0;
