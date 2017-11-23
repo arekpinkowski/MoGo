@@ -1,56 +1,4 @@
 $(document).ready(function(){
-//slider
-
-    (function(){
-
-        var slides = $('.slider_slide');
-        var timeBars = $('.slider_progress_bar');
-
-    [].forEach.call(slides, function(slide) {
-
-        var currentIndex = 0;
-        var width = 100;
-
-        function switchImg() {
-            slide.style.left = -width * currentIndex + '%';
-        }
-
-        function progressBar() {
-
-            var barWidth = 0;
-            var timeToProgress = setInterval(function() {
-
-                barWidth += 1;
-
-                if(barWidth > 100) {
-                    clearInterval(timeToProgress);
-                } else {
-                    timeBars[currentIndex].value = barWidth;
-                }
-            }, 50);
-        }
-
-        progressBar();
-
-        var tickTock = setInterval(function() {
-
-            progressBar();
-            timeBars[currentIndex].value = 0;
-
-            currentIndex++;
-            switchImg();
-
-            if(currentIndex > slides.length - 1) {
-                slide.style.left = 0;
-                currentIndex = 0;
-            }
-        }, 5001);
-    });
-})();
-
-
-
-    var body = $('body,html')
 
     var nav = $("#nav_icon")
 
@@ -71,7 +19,6 @@ $(document).ready(function(){
     var contact = $("#contact");
     var contact_menu = $("#contact_menu")
 
-
 //hamburger
 
     nav.click(function(){
@@ -88,7 +35,7 @@ $(document).ready(function(){
         }
     });
     return_to_top.click(function() {
-        body.animate({
+        $('body,html').animate({
             scrollTop : 0
         }, 500);
     });
@@ -96,31 +43,31 @@ $(document).ready(function(){
 //menu
 
     about_menu.click(function() {
-        body.animate({
+        $('html, body').animate({
             scrollTop: about.offset().top
         }, 700);
     })
 
     service_menu.click(function() {
-        body.animate({
+        $('html, body').animate({
             scrollTop: service.offset().top
         }, 1000);
     })
 
     work_menu.click(function() {
-        body.animate({
+        $('html, body').animate({
             scrollTop: work.offset().top
         }, 1000);
     })
 
     blog_menu.click(function() {
-        body.animate({
+        $('html, body').animate({
             scrollTop: blog.offset().top
         }, 1200);
     })
 
     contact_menu.click(function() {
-        body.animate({
+        $('html, body').animate({
             scrollTop: contact.offset().top
         }, 1200);
     })
